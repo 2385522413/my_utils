@@ -1,4 +1,4 @@
-function call(Fn, obj, ...args) {
+export default function call(Fn, obj, ...args) {
   if (obj === undefined || obj === null) {
     // 表示全局对象（ES11新增特性）
     obj = globalThis;
