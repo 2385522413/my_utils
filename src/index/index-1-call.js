@@ -1,6 +1,6 @@
-import call from "./function/call";
-import apply from "./function/apply";
-import bind from "./function/bind";
+import call from "../function/call";
+import apply from "../function/apply";
+import bind from "../function/bind";
 
 console.log("****test call ****");
 
