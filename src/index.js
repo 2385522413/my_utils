@@ -1,11 +1,41 @@
-import debounce from "./function/debounce";
+import {
+  map,
+  reduce,
+  filter,
+  find,
+  findIndex,
+  every,
+  some,
+} from "./array/declares";
+// 声明一个数组
 
-let input = document.querySelector("input");
+const arr = [2, 3, 4, 5, 6, 8];
 
-// input.onkeydown = function (e) {
-//   console.log(e.keyCode);
-// };
+// const result = map(arr, (item) => {
+//   return item * 10
+// })
+// console.log(result)
 
-input.onkeydown = debounce(function (e) {
-  console.log(e.keyCode);
-}, 1000);
+// const result = reduce(arr, (res, value) => {
+//   return res + value;
+// }, 1)
+
+// const result = filter(arr, (item) => item % 2 === 0);
+
+// const result = find(arr, item => item > 5)
+
+// const result2 = find(arr, item => item > 10)
+
+// const result = findIndex(arr, item => item > 5)
+
+// const result2 = findIndex(arr, item => item > 10)
+
+// const result = every(arr, item => item > 0)
+
+// const result2 = every(arr, item => item > 5)
+
+const result = some(arr, (item) => item > 10);
+
+const result2 = some(arr, (item) => item > 5);
+console.log(result);
+console.log(result2);
