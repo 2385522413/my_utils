@@ -1,41 +1,7 @@
-import {
-  map,
-  reduce,
-  filter,
-  find,
-  findIndex,
-  every,
-  some,
-} from "./array/declares";
-// 声明一个数组
+import { unique, unique1, unique2 } from "./array/unique";
 
-const arr = [2, 3, 4, 5, 6, 8];
+const arr = [1, 2, 2, 3, 3, 4, 4, 4, 5, 6, 7, 7, 8, 9];
 
-// const result = map(arr, (item) => {
-//   return item * 10
-// })
-// console.log(result)
-
-// const result = reduce(arr, (res, value) => {
-//   return res + value;
-// }, 1)
-
-// const result = filter(arr, (item) => item % 2 === 0);
-
-// const result = find(arr, item => item > 5)
-
-// const result2 = find(arr, item => item > 10)
-
-// const result = findIndex(arr, item => item > 5)
-
-// const result2 = findIndex(arr, item => item > 10)
-
-// const result = every(arr, item => item > 0)
-
-// const result2 = every(arr, item => item > 5)
-
-const result = some(arr, (item) => item > 10);
-
-const result2 = some(arr, (item) => item > 5);
-console.log(result);
-console.log(result2);
+console.log(unique(arr));
+console.log(unique1(arr));
+console.log(unique2(arr));
