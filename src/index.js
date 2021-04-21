@@ -1,12 +1,11 @@
-import throttle from "./function/throttle.js";
+import debounce from "./function/debounce";
 
-// window.addEventListener("scroll", function () {
-//   console.log(Date.now);
-// });
+let input = document.querySelector("input");
 
-window.addEventListener(
-  "scroll",
-  throttle(function (e) {
-    console.log(e);
-  }, 500)
-);
+// input.onkeydown = function (e) {
+//   console.log(e.keyCode);
+// };
+
+input.onkeydown = debounce(function (e) {
+  console.log(e.keyCode);
+}, 1000);
