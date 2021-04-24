@@ -1,6 +1,8 @@
-import slice from "./array/slice";
+import { drop, dropRight } from "./array/drop";
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let arr = [1, 3, 5, 7, 9];
+let result = drop(arr, 3);
+console.log(arr, result);
 
-const result = slice(arr, 1, 5);
-console.log(result);
+let result2 = dropRight(arr, 3);
+console.log(arr, result2);
