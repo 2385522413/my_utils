@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM事件流</title>
+  <style>
+    #outter {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+    }
+
+    #inner {
+      width: 100px;
+      height: 100px;
+      background-color: skyblue;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="outter">
+    <div id="inner"></div>
+  </div>
+
+  <script>
+    let innerBox = document.getElementById('inner')
+    let outterBox = document.getElementById('outter')
+
+    outterBox.addEventListener('click', function () {
+      console.log('捕获 outter')
+    }, true)
+
+    innerBox.addEventListener('click', function () {
+      console.log('捕获 inner')
+    }, true)
+
+    outterBox.addEventListener('click', function () {
+      console.log('冒泡 outter')
+    })
+
+    innerBox.addEventListener('click', function () {
+      console.log('冒泡 inner')
+    })
+  </script>
+</body>
+
+</html>
