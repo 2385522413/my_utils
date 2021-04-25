@@ -8,6 +8,10 @@ module.exports = {
     publicPath: "dist",
     // 打包文件
     filename: "yk-utils.js",
+    // // 设置对外暴露对象的全局名称
+    // library: "ykUtils",
+    // // 打包生成通过esm、commonjs、requirejs的语法引入
+    // libraryTarget: "umd",
   },
   // 配置webpack-dev-server
   devServer: {
