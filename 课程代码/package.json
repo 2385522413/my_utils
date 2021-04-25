@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "build:watch": "webpack --watch"
+    "build:watch": "webpack --watch"
   },
   "keywords": [
     "atguigu",
@@ -21,7 +21,7 @@
     "event-bus",
     "pub-sub"
   ],
-  "author": "",
+  "author": "yk2012",
   "license": "ISC",
   "dependencies": {
     "webpack": "^5.16.0",

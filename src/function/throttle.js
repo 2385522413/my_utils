@@ -4,7 +4,7 @@
  * @param {*} wait 
  * @returns 
  */
-export default function throttle(callback, wait) {
+export function throttle(callback, wait) {
   // 定义开始时间
   let start = 0;
   // 返回结果是一个函数

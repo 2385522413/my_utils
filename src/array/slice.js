@@ -1,4 +1,4 @@
-export default function slice(arr, begin, end) {
+export function slice(arr, begin, end) {
   if (arr.length === 0) {
     return [];
   }

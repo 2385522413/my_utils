@@ -1,4 +1,4 @@
-export default function apply(Fn, obj, arr) {
+export function apply(Fn, obj, arr) {
   if (obj === undefined || obj === null) {
     obj = globalThis;
   }

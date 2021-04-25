@@ -6,7 +6,7 @@
  * @param {*} Fn 构造函数
  * @returns
  */
-export default function myInstanceOf(obj, Fn) {
+export function myInstanceOf(obj, Fn) {
   // 得到obj的隐式原型对象
   let protoObj = obj.__proto__;
   // 原型对象存在，就遍历原型链

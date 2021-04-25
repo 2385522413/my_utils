@@ -4,7 +4,7 @@
  * @param  {...any} args
  * @returns
  */
-export default function concat(arr, ...args) {
+export function concat(arr, ...args) {
   const result = [...arr];
   args.forEach((item) => {
     // 判断item是否是数组，是数组就要展开入栈

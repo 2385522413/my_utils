@@ -5,7 +5,7 @@
  * @param  {...any} args
  * @returns
  */
-export default function newInstance(Fn, ...args) {
+export function newInstance(Fn, ...args) {
   // 1. 创建新对象
   // 创建空的object实例对象，作为Fn的实例对象
   const obj = {};

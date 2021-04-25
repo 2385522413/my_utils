@@ -3,7 +3,7 @@
  * @param  {...any} objs 
  * @returns 
  */
-export default function mergeObject(...objs) {
+export function mergeObject(...objs) {
   const result = {};
 
   // 遍历objs得到一个个obj

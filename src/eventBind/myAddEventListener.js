@@ -5,7 +5,7 @@
  * @param {Function} fn 回调函数
  * @param {String} selector 子元素选择器
  */
-export default function myAddEventListener(el, type, fn, selector) {
+export function myAddEventListener(el, type, fn, selector) {
   // 判断el的类型，获取元素
   if (typeof el === "string") {
     el = document.querySelector(el);

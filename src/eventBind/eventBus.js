@@ -1,5 +1,5 @@
 // 定义事件总线
-const eventBus = {
+export const eventBus = {
   // 保存eventName类型与回调callback的容器
   callbackObj: {},
 };
@@ -50,4 +50,3 @@ eventBus.off = function (eventName) {
   }
 };
 
-export default eventBus;
