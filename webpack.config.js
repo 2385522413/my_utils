@@ -8,9 +8,9 @@ module.exports = {
     // 打包文件夹
     publicPath: path.resolve(__dirname, "dist"),
     // 打包文件
-    filename: "yk-utils.js",
+    filename: "yn-utils.js",
     // 设置对外暴露对象的全局名称
-    library: "ykUtils",
+    library: "ynUtils",
     // 打包生成通过esm、commonjs、requirejs的语法引入
     libraryTarget: "umd",
   },

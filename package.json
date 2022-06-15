@@ -1,8 +1,8 @@
 {
-  "name": "yk_utils",
+  "name": "yn_utils",
   "version": "1.0.1",
-  "description": "",
-  "main": "./dist/yk-utils.js",
+  "description": "this is utils of yn",
+  "main": "./dist/yn-utils.js",
   "scripts": {
     "dev": "webpack-dev-server",
     "build:watch": "webpack --watch"
